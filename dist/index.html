@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <meta
+      name="description"
+      content="Huntek, donde lo díficil se hace simple."
+    />
+    <title>Huntek</title>
+    <link
+      rel="icon"
+      href="./assets/huntek-c55aab9b.svg"
+      type="image/x-icon"
+    />
+    <link
+      rel="canonical"
+      href="https://huntek.vercel.app/"
+    />
+    
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="./assets/index-591224ea.js"></script>
+    <link rel="stylesheet" href="./assets/index-734e80eb.css">
+  </head>
+  <body>
+    <main class="w-full h-total bg-white">
+      <canvas id="canvas" class="webgl"></canvas>
+      <header
+        id="overlay"
+        class="w-full h-total bg-white fixed top-0 flex items-center justify-center z-50"
+      >
+        <img
+          src="./assets/huntek-c55aab9b.svg"
+          alt="huntek"
+          class="h-32 w-32 animate-bounce"
+        />
+      </header>
+      <nav
+        id="nav"
+        class="w-full h-16 lg:px-10 flex flex-row justify-start fixed top-0 z-20 nav text-white"
+      >
+        <article
+          id="cont"
+          class="w-full lg:w-1/2 h-full flex flex-row justify-evenly items-center"
+        >
+          <img
+            id="huntekw"
+            src="./assets/huntekw-db255532.svg"
+            alt="H"
+            class="w-12 h-12"
+          />
+          <img
+            id="huntek"
+            src="./assets/huntek-c55aab9b.svg"
+            alt="H"
+            class="w-12 h-12 inactive"
+          />
+          <a
+            href="#pri"
+            class="w-fit px-2 text-xs lg:text-base grid place-content-center relative"
+            >Inicio
+            <div
+              id="inicio"
+              class="w-full h-1 bg-white absolute -bottom-1"
+            ></div>
+          </a>
+          <div
+            class="w-fit px-2 text-xs lg:text-base grid place-content-center relative"
+          >
+            Nosotros
+            <div
+              id="nos1"
+              class="w-0 h-1 bg-[#046255] absolute -bottom-1 left-0"
+            ></div>
+            <a
+              href="#seg"
+              class="w-[28%] lg:w-[47%] h-10 absolute -bottom-1"
+              ><div
+                id="alt1"
+                class="w-full h-1 bg-[#04625500] absolute bottom-0"
+              ></div
+            ></a>
+            <div
+              id="nos2"
+              class="w-0 h-1 bg-[#046255] absolute -bottom-1 left-[36%] lg:hidden"
+            ></div>
+            <a
+              href="#var"
+              class="w-[28%] h-10 absolute -bottom-1 left-[36%] lg:hidden"
+              ><div
+                id="alt2"
+                class="w-full h-1 bg-[#04625500] absolute bottom-0"
+              ></div
+            ></a>
+            <div
+              id="nos3"
+              class="w-0 h-1 bg-[#046255] absolute -bottom-1 left-[71%] lg:left-[53%]"
+            ></div>
+            <a
+              href="#ter"
+              class="w-[28%] lg:w-[47%] h-10 absolute -bottom-1 left-[71%] lg:left-[53%]"
+              ><divb
+                id="alt3"
+                class="w-full h-1 bg-[#04625500] absolute bottom-0"
+              ></divb
+            ></a>
+          </div>
+          <a
+            href="#cua"
+            class="w-fit px-2 text-xs lg:text-base grid place-content-center relative"
+            >Beneficios
+            <div
+              id="bene"
+              class="w-0 h-1 bg-[#046255] absolute -bottom-1"
+            ></div>
+          </a>
+          <a
+            href="#qui"
+            class="w-fit px-2 text-xs lg:text-base grid place-content-center relative"
+            >Registrate
+            <div
+              id="regis"
+              class="w-0 h-1 bg-[#046255] absolute -bottom-1"
+            ></div>
+          </a>
+          <a
+            href="https://huntek.vercel.app/"
+            target="_blank"
+            class="hidden lg:grid w-fit px-2 text-xs lg:text-base place-content-center relative"
+            >Inicia Sesión
+            <div
+              id="log"
+              class="w-0 h-1 bg-[#046255] absolute -bottom-1"
+            ></div>
+          </a>
+        </article>
+      </nav>
+      <section
+        id="pri"
+        class="w-full h-total bg-white py-16 px-10 flex flex-row gradient text-white"
+      >
+        <a href="#seg" class="hidden lg:flex">
+          <img
+            src="./assets/downArrow-18acc411.svg"
+            alt="arrow"
+            class="w-16 h-16 invert absolute bottom-4 right-1/2 animate-bounce"
+          />
+        </a>
+        <article
+          class="w-full lg:w-1/2 h-full flex flex-col justify-end lg:justify-center items-center"
+        >
+          <h1 class="text-8xl lg:text-9xl">Huntek</h1>
+          <p class="text-base lg:text-2xl text-center">
+            Matchea con el trabajo de tus sueños
+          </p>
+          <div
+            class="w-full mt-4 lg:mt-6 flex flex-row justify-center gap-x-4 lg:gap-x-6"
+          >
+            <a
+              href="#qui"
+              class="botonazo z-10 w-fit px-4 py-2 lg:px-6 lg:py-3 flex justify-center bg-white text-base lg:text-xl items-center rounded-lg"
+            >
+              Registrate
+            </a>
+            <a
+              href="https://huntek.vercel.app/"
+              target="_blank"
+              class="botonazo z-10 w-fit px-4 py-2 lg:px-6 lg:py-3 flex justify-center bg-white text-base lg:text-xl items-center rounded-lg"
+            >
+              Inicia Sesión
+            </a>
+          </div>
+        </article>
+      </section>
+      <section
+        id="seg"
+        class="w-full h-total z-[-10] bg-white pt-24 lg:pt-16 pb-10 px-5 lg:px-10 flex flex-col justify-center items-end text-black relative"
+      >
+        <article
+          id="tex1"
+          class="w-full lg:w-1/2 h-full flex flex-col justify-between lg:justify-center gap-y-6"
+        >
+          <div
+            class="w-full flex flex-col justify-start gap-y-2 text-center lg:text-start"
+          >
+            <h1
+              class="text-3xl lg:text-5xl xl:text-6xl font-semibold"
+            >
+              ¿Qué hacemos?
+            </h1>
+            <p
+              class="text-base lg:text-2xl xl:text-3xl font-light"
+            >
+              Buscamos el candidato o la oportunidad laboral
+              ideal para las empresas o personas.
+            </p>
+          </div>
+          <div
+            class="w-ful flex flex-row flex-wrap justify-center items-end gap-y-5 text-center text-xs md:text-base xl:text-xl"
+          >
+            <div
+              class="w-full flex flex-row justify-center lg:justify-start gap-x-5"
+            >
+              <button
+                onclick="my_modal_1.showModal()"
+                class="flex-grow lg:whitespace-nowrap w-fit px-3 py-2 cursor-pointer xl:px-6 xl:py-5 bg-[#046255] text-[#e3eeec] border border-black hover:scale-105 rounded-full duration-200"
+              >
+                No recibo feedback. 🤷‍♂️🔇
+              </button>
+              <dialog id="my_modal_1" class="modal">
+                <div class="modal-box">
+                  <h3
+                    class="font-bold text-[#046255] text-4xl"
+                  >
+                    Huntek
+                  </h3>
+                  <p class="py-4 text-start">
+                    Siempre concluimos nuestros procesos.
+                  </p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+              <button
+                onclick="my_modal_2.showModal()"
+                class="flex-grow lg:whitespace-nowrap w-fit px-3 py-2 cursor-pointer xl:px-6 xl:py-5 border border-black hover:scale-105 rounded-full duration-200"
+              >
+                No es fácil encontrar trabajo. 😓💼
+              </button>
+              <dialog id="my_modal_2" class="modal">
+                <div class="modal-box">
+                  <h3
+                    class="font-bold text-[#046255] text-4xl"
+                  >
+                    Huntek
+                  </h3>
+                  <p class="py-4 text-start">
+                    Nuestro match es ágil y muy sencillo
+                  </p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+            <div
+              class="w-full flex flex-row justify-center lg:justify-start gap-x-5"
+            >
+              <button
+                onclick="my_modal_3.showModal()"
+                class="flex-grow lg:whitespace-nowrap w-fit px-3 py-2 cursor-pointer xl:px-6 xl:py-5 bg-[#e3eeec] border border-black hover:scale-105 rounded-full duration-200"
+              >
+                No consigo lo que estoy buscando. 🕵️‍♀️🔄
+              </button>
+              <dialog id="my_modal_3" class="modal">
+                <div class="modal-box">
+                  <h3
+                    class="font-bold text-[#046255] text-4xl"
+                  >
+                    Huntek
+                  </h3>
+                  <p class="py-4 text-start">
+                    Tenemos una oferta para cada perfil.
+                  </p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+              <button
+                onclick="my_modal_4.showModal()"
+                class="flex-grow lg:whitespace-nowrap w-fit px-3 py-2 cursor-pointer xl:px-6 xl:py-5 bg-[#046255] text-[#e3eeec] border border-black hover:scale-105 rounded-full duration-200"
+              >
+                Odio buscar trabajo. 😡🚫
+              </button>
+              <dialog id="my_modal_4" class="modal">
+                <div class="modal-box">
+                  <h3
+                    class="font-bold text-[#046255] text-4xl"
+                  >
+                    Huntek
+                  </h3>
+                  <p class="py-4 text-start">
+                    Te facilitamos la búsqueda de una manera
+                    divertida
+                  </p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+            <div
+              class="w-full hidden lg:flex flex-row justify-center lg:justify-start gap-x-5"
+            >
+              <button
+                onclick="my_modal_5.showModal()"
+                class="flex-grow lg:whitespace-nowrap w-fit px-3 py-2 cursor-pointer xl:px-6 xl:py-5 bg-[#046255] text-[#e3eeec] border border-black hover:scale-105 rounded-full duration-200"
+              >
+                Me dejaron en visto. 💬✔️
+              </button>
+              <dialog id="my_modal_5" class="modal">
+                <div class="modal-box">
+                  <h3
+                    class="font-bold text-[#046255] text-4xl"
+                  >
+                    Huntek
+                  </h3>
+                  <p class="py-4 text-start">
+                    Siempre tendrás seguimiento y respuesta
+                    en todos tus Match con nosotros y
+                    nuestros clientes.
+                  </p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+              <button
+                onclick="my_modal_6.showModal()"
+                class="flex-grow lg:whitespace-nowrap w-fit px-3 py-2 cursor-pointer xl:px-6 xl:py-5 border border-black hover:scale-105 rounded-full duration-200"
+              >
+                No sé qué hacer en una entrevista. 🤔🗣️
+              </button>
+              <dialog id="my_modal_6" class="modal">
+                <div class="modal-box">
+                  <h3
+                    class="font-bold text-[#046255] text-4xl"
+                  >
+                    Huntek
+                  </h3>
+                  <p class="py-4 text-start">
+                    Te asesoramos para tener un buen
+                    desempeño en tu entrevista.
+                  </p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+            <div
+              class="w-full hidden lg:flex flex-row justify-center lg:justify-start gap-x-5"
+            >
+              <button
+                onclick="my_modal_7.showModal()"
+                class="flex-grow lg:whitespace-nowrap w-fit px-3 py-2 cursor-pointer xl:px-6 xl:py-5 bg-[#e3eeec] border border-black hover:scale-105 rounded-full duration-200"
+              >
+                Ninguna oferta me hace sentido. 🤨💔
+              </button>
+              <dialog id="my_modal_7" class="modal">
+                <div class="modal-box">
+                  <h3
+                    class="font-bold text-[#046255] text-4xl"
+                  >
+                    Huntek
+                  </h3>
+                  <p class="py-4 text-start">
+                    Nuestras descripciones laborales son
+                    asertivas y de fácil comprensión.
+                  </p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+              <button
+                onclick="my_modal_8.showModal()"
+                class="flex-grow lg:whitespace-nowrap w-fit px-3 py-2 cursor-pointer xl:px-6 xl:py-5 bg-[#046255] text-[#e3eeec] border border-black hover:scale-105 rounded-full duration-200"
+              >
+                No tengo experiencia. 🐣📚
+              </button>
+              <dialog id="my_modal_8" class="modal">
+                <div class="modal-box">
+                  <h3
+                    class="font-bold text-[#046255] text-4xl"
+                  >
+                    Huntek
+                  </h3>
+                  <p class="py-4 text-start">
+                    Con nosotros no es necesaria la
+                    experiencia para encontrar una
+                    oportunidad laboral.
+                  </p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+            <div
+              class="w-full hidden lg:flex flex-row justify-center lg:justify-start gap-x-5"
+            >
+              <button
+                onclick="my_modal_9.showModal()"
+                class="flex-grow lg:whitespace-nowrap w-fit px-3 py-2 cursor-pointer xl:px-6 xl:py-5 border border-black hover:scale-105 rounded-full duration-200"
+              >
+                No sé hacer mi CV. 📄🤷‍♀️
+              </button>
+              <dialog id="my_modal_9" class="modal">
+                <div class="modal-box">
+                  <h3
+                    class="font-bold text-[#046255] text-4xl"
+                  >
+                    Huntek
+                  </h3>
+                  <p class="py-4 text-start">
+                    Nuestros asesores te ayudarán a tener un
+                    cv de alto impacto.
+                  </p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+              <button
+                onclick="my_modal_11.showModal()"
+                class="flex-grow lg:whitespace-nowrap w-fit px-3 py-2 cursor-pointer xl:px-6 xl:py-5 bg-[#e3eeec] border border-black hover:scale-105 rounded-full duration-200"
+              >
+                Apliqué y no hubo respuestas. 📭🤷‍♂️
+              </button>
+              <dialog id="my_modal_11" class="modal">
+                <div class="modal-box">
+                  <h3
+                    class="font-bold text-[#046255] text-4xl"
+                  >
+                    Huntek
+                  </h3>
+                  <p class="py-4 text-start">
+                    Tendrás claridad en cada paso de tu
+                    proceso.
+                  </p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section
+        id="var"
+        class="w-full h-total bg-white pt-24 lg:pt-16 pb-10 px-5 flex flex-col items-center lg:hidden"
+      >
+        <article
+          id="texV"
+          class="w-ful flex flex-row flex-wrap justify-center items-end gap-y-5 text-center text-xs"
+        >
+          <div
+            class="w-full flex flex-row justify-center lg:justify-start gap-x-5"
+          >
+            <button
+              onclick="my_modal_12.showModal()"
+              class="flex-grow lg:whitespace-nowrap w-fit px-3 py-2 cursor-pointer xl:px-6 xl:py-5 bg-[#046255] text-[#e3eeec] border border-black hover:scale-105 rounded-full duration-200"
+            >
+              Me dejaron en visto. 💬✔️
+            </button>
+            <dialog id="my_modal_12" class="modal">
+              <div class="modal-box">
+                <h3
+                  class="font-bold text-[#046255] text-4xl"
+                >
+                  Huntek
+                </h3>
+                <p class="py-4 text-start">
+                  Siempre tendrás seguimiento y respuesta en
+                  todos tus Match con nosotros y nuestros
+                  clientes.
+                </p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <button class="btn">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+            <button
+              onclick="my_modal_13.showModal()"
+              class="flex-grow lg:whitespace-nowrap w-fit px-3 py-2 cursor-pointer xl:px-6 xl:py-5 border border-black hover:scale-105 rounded-full duration-200"
+            >
+              No sé qué hacer en una entrevista. 🤔🗣️
+            </button>
+            <dialog id="my_modal_13" class="modal">
+              <div class="modal-box">
+                <h3
+                  class="font-bold text-[#046255] text-4xl"
+                >
+                  Huntek
+                </h3>
+                <p class="py-4 text-start">
+                  Te asesoramos para tener un buen desempeño
+                  en tu entrevista.
+                </p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <button class="btn">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          </div>
+          <div
+            class="w-full flex flex-row justify-center lg:justify-start gap-x-5"
+          >
+            <button
+              onclick="my_modal_14.showModal()"
+              class="flex-grow lg:whitespace-nowrap w-fit px-3 py-2 cursor-pointer xl:px-6 xl:py-5 bg-[#e3eeec] border border-black hover:scale-105 rounded-full duration-200"
+            >
+              Ninguna oferta me hace sentido. 🤨💔
+            </button>
+            <dialog id="my_modal_14" class="modal">
+              <div class="modal-box">
+                <h3
+                  class="font-bold text-[#046255] text-4xl"
+                >
+                  Huntek
+                </h3>
+                <p class="py-4 text-start">
+                  Nuestras descripciones laborales son
+                  asertivas y de fácil comprensión.
+                </p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <button class="btn">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+            <button
+              onclick="my_modal_15.showModal()"
+              class="flex-grow lg:whitespace-nowrap w-fit px-3 py-2 cursor-pointer xl:px-6 xl:py-5 bg-[#046255] text-[#e3eeec] border border-black hover:scale-105 rounded-full duration-200"
+            >
+              No tengo experiencia. 🐣📚
+            </button>
+            <dialog id="my_modal_15" class="modal">
+              <div class="modal-box">
+                <h3
+                  class="font-bold text-[#046255] text-4xl"
+                >
+                  Huntek
+                </h3>
+                <p class="py-4 text-start">
+                  Con nosotros no es necesaria la
+                  experiencia para encontrar una oportunidad
+                  laboral.
+                </p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <button class="btn">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          </div>
+          <div
+            class="w-full flex flex-row justify-center lg:justify-start gap-x-5"
+          >
+            <button
+              onclick="my_modal_16.showModal()"
+              class="flex-grow lg:whitespace-nowrap w-fit px-3 py-2 cursor-pointer xl:px-6 xl:py-5 bg-[#046255] text-[#e3eeec] border border-black hover:scale-105 rounded-full duration-200"
+            >
+              No sé hacer mi CV. 📄🤷‍♀️
+            </button>
+            <dialog id="my_modal_16" class="modal">
+              <div class="modal-box">
+                <h3
+                  class="font-bold text-[#046255] text-4xl"
+                >
+                  Huntek
+                </h3>
+                <p class="py-4 text-start">
+                  Nuestros asesores te ayudarán a tener un
+                  cv de alto impacto.
+                </p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <button class="btn">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+            <button
+              onclick="my_modal_17.showModal()"
+              class="flex-grow lg:whitespace-nowrap w-fit px-3 py-2 cursor-pointer xl:px-6 xl:py-5 bg-[#e3eeec] border border-black hover:scale-105 rounded-full duration-200"
+            >
+              Apliqué y no hubo respuestas. 📭🤷‍♂️
+            </button>
+            <dialog id="my_modal_17" class="modal">
+              <div class="modal-box">
+                <h3
+                  class="font-bold text-[#046255] text-4xl"
+                >
+                  Huntek
+                </h3>
+                <p class="py-4 text-start">
+                  Tendrás claridad en cada paso de tu
+                  proceso.
+                </p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <button class="btn">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          </div>
+        </article>
+      </section>
+      <section
+        id="ter"
+        class="w-full h-total bg-white pt-16 pb-10 px-5 lg:px-10 xl:px-14 flex flex-col overflow-hidden text-black"
+      >
+        <article
+          id="tex2"
+          class="w-full lg:w-1/2 h-full flex flex-col justify-center gap-y-16 lg:gap-y-6"
+        >
+          <div
+            class="w-full flex flex-col justify-start gap-y-2 text-center lg:text-start"
+          >
+            <h1
+              class="text-3xl lg:text-5xl xl:text-6xl font-semibold"
+            >
+              ¿Cómo lo hacemos?
+            </h1>
+            <p
+              class="text-base lg:text-2xl xl:text-3xl font-light"
+            >
+              Utilizando un algoritmo que te permite ver
+              exclusivamente lo que estas buscando según las
+              necesidades profesionales, de una manera
+              fácil, sencilla y rápida, mediante el método
+              "Swipe".
+            </p>
+          </div>
+          <div
+            class="w-full lg:hidden flex flex-row justify-center items-center"
+          >
+            <img
+              src="./assets/candidato (1)-d10234d9.png"
+              alt="candidato"
+              class="w-[30%] border-2 border-black rounded-lg -rotate-[20deg] translate-x- z-10"
+            />
+            <img
+              src="./assets/MATCH!-89507331.png"
+              alt="huntek"
+              class="w-[30%]"
+            />
+            <img
+              src="./assets/empresa-9e4f1df3.png"
+              alt="empresa"
+              class="w-[30%] border-2 border-black rounded-lg rotate-[20deg] -translate-x- z-10"
+            />
+          </div>
+          <div
+            class="hidden lg:flex w-full h-2/3 bg-[#e3eeec] border-4 border-[#046255] rounded-r-3xl shadowHuntek overflow-hidden"
+          >
+            <div
+              id="carousel"
+              class="w-full p-2 flex gap-x-2 caroAnimation"
+            >
+              <img
+                src="./assets/candidato (1)-d10234d9.png"
+                alt="retrato"
+                class="border-2 border-black rounded-lg"
+              />
+              <img
+                src="./assets/candidato (2)-6fb98284.png"
+                alt="retrato"
+                class="border-2 border-black rounded-lg"
+              />
+              <img
+                src="./assets/candidato (3)-1510975c.png"
+                alt="retrato"
+                class="border-2 border-black rounded-lg"
+              />
+              <img
+                src="./assets/candidato (4)-64b991c5.png"
+                alt="retrato"
+                class="border-2 border-black rounded-lg"
+              />
+              <img
+                src="./assets/candidato (5)-340ac356.png"
+                alt="retrato"
+                class="border-2 border-black rounded-lg"
+              />
+              <img
+                src="./assets/candidato (6)-6a5b195f.png"
+                alt="retrato"
+                class="border-2 border-black rounded-lg"
+              />
+              <img
+                src="./assets/candidato (7)-99fc1b3e.png"
+                alt="retrato"
+                class="border-2 border-black rounded-lg"
+              />
+              <img
+                src="./assets/candidato (1)-d10234d9.png"
+                alt="retrato"
+                class="border-2 border-black rounded-lg"
+              />
+              <img
+                src="./assets/candidato (2)-6fb98284.png"
+                alt="retrato"
+                class="border-2 border-black rounded-lg"
+              />
+              <img
+                src="./assets/candidato (3)-1510975c.png"
+                alt="retrato"
+                class="border-2 border-black rounded-lg"
+              />
+              <img
+                src="./assets/candidato (4)-64b991c5.png"
+                alt="retrato"
+                class="border-2 border-black rounded-lg"
+              />
+              <img
+                src="./assets/candidato (5)-340ac356.png"
+                alt="retrato"
+                class="border-2 border-black rounded-lg"
+              />
+              <img
+                src="./assets/candidato (6)-6a5b195f.png"
+                alt="retrato"
+                class="border-2 border-black rounded-lg"
+              />
+              <img
+                src="./assets/candidato (7)-99fc1b3e.png"
+                alt="retrato"
+                class="border-2 border-black rounded-lg"
+              />
+            </div>
+          </div>
+        </article>
+      </section>
+      <section
+        id="cua"
+        class="w-full h-total bg-white pt-16 pb-10 px-5 gradient flex flex-col justify-center lg:items-end"
+      >
+        <article
+          id="tex3"
+          class="w-full lg:w-1/2 h-full flex flex-col justify-center gap-y-6 lg:gap-y-5 xl:gap-y-6 items-center lg:items-start text-white"
+        >
+          <h1
+            class="text-3xl lg:text-5xl xl:text-6xl font-semibold text-center lg:text-start"
+          >
+            Qué beneficios tenemos?
+          </h1>
+          <div
+            class="w-full flex flex-col justify-center items-center lg:items-start gap-y-4 lg:gap-y-2 xl:gap-y-4"
+          >
+            <span
+              class="botonazo w-fit px-8 xl:px-10 py-3 xl:py-5 flex items-center rounded-3xl shadow-lg gap-4 cursor-default"
+            >
+              <img
+                src="./assets/person-svgrepo-com-4362a76b.svg"
+                alt="person"
+                class="w-10 h-10 fill-[#046255]"
+              />
+              <h3
+                class="text-lg lg:text-2xl xl:text-4xl font-medium"
+              >
+                Para los candidatos
+              </h3>
+            </span>
+            <div
+              class="w-full m-3 grid grid-cols-2 grid-rows-2 gap-5 lg:gap-y-4 xl:gap-y-5"
+            >
+              <span class="w-fit flex items-center gap-4">
+                <img
+                  src="./assets/person-3-fill-svgrepo-com-3b68e6cd.svg"
+                  alt="time"
+                  class="w-10 h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 filter invert"
+                />
+                <p
+                  class="text-sm lg:text-base xl:text-xl uppercase"
+                >
+                  Competencia limitada
+                </p>
+              </span>
+              <span class="w-fit flex items-center gap-4">
+                <img
+                  src="./assets/businessman-with-doubts-svgrepo-com-49467be9.svg"
+                  alt="time"
+                  class="w-8 h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12 filter invert"
+                />
+                <p
+                  class="text-sm lg:text-base xl:text-xl uppercase"
+                >
+                  No más incertidumbre
+                </p>
+              </span>
+              <span class="w-fit flex items-center gap-4">
+                <img
+                  src="./assets/vision-off-svgrepo-com-fdfe335f.svg"
+                  alt="check"
+                  class="w-8 h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12 filter invert"
+                />
+                <p
+                  class="text-sm lg:text-base xl:text-xl uppercase"
+                >
+                  Tendrás relevancia
+                </p>
+              </span>
+              <span class="w-fit flex items-center gap-4">
+                <img
+                  src="./assets/time-past-svgrepo-com-75fc9187.svg"
+                  alt="check"
+                  class="w-8 h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12 filter invert"
+                />
+                <p
+                  class="text-sm lg:text-base xl:text-xl uppercase"
+                >
+                  No perderás el tiempo
+                </p>
+              </span>
+            </div>
+          </div>
+          <div
+            class="w-full h-fit flex flex-col justify-center items-center lg:items-start gap-y-4 lg:gap-y-2 xl:gap-y-4"
+          >
+            <span
+              class="botonazo w-fit px-8 xl:px-10 py-3 xl:py-5 flex items-center rounded-3xl shadow-lg gap-5 cursor-default"
+            >
+              <img
+                src="./assets/briefcase-svgrepo-com-9eddc246.svg"
+                alt="briefcase"
+                class="w-9 h-9"
+              />
+              <h3
+                class="text-lg lg:text-2xl xl:text-4xl font-medium"
+              >
+                Para las empresas
+              </h3>
+            </span>
+            <div
+              class="w-full m-3 grid grid-cols-2 grid-rows-2 gap-5 lg:gap-y-4 xl:gap-y-5"
+            >
+              <span class="w-fit flex items-center gap-4">
+                <img
+                  src="./assets/person-combination-svgrepo-com-cebb7c9a.svg"
+                  alt="money"
+                  class="w-8 h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12 filter invert"
+                />
+                <p
+                  class="text-sm lg:text-base xl:text-xl uppercase"
+                >
+                  Postulantes de acuerdo a lo que buscas
+                </p>
+              </span>
+              <span class="w-fit flex items-center gap-4">
+                <img
+                  src="./assets/list-check-svgrepo-com-428765f7.svg"
+                  alt="money"
+                  class="w-8 h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12 filter invert"
+                />
+                <p
+                  class="text-sm lg:text-base xl:text-xl uppercase"
+                >
+                  Ya no más perfiles falsos
+                </p>
+              </span>
+              <span class="w-fit flex items-center gap-4">
+                <img
+                  src="./assets/money-bag-svgrepo-com-dba25262.svg"
+                  alt="star"
+                  class="w-10 h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 filter invert"
+                />
+                <p
+                  class="text-sm lg:text-base xl:text-xl uppercase"
+                >
+                  Altos costos
+                </p>
+              </span>
+              <span class="w-fit flex items-center gap-4">
+                <img
+                  src="./assets/time-past-svgrepo-com-75fc9187.svg"
+                  alt="star"
+                  class="w-7 h-7 lg:w-11 lg:h-11 filter invert"
+                />
+                <p
+                  class="text-sm lg:text-base xl:text-xl uppercase"
+                >
+                  Recorta tiempos de contratación
+                </p>
+              </span>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section
+        id="qui"
+        class="w-full h-total pt-16 pb-10 px-5 flex flex-col lg:flex-row justify-start lg:justify-around items-center gap-y-10 lg:gap-y-0 bg-black relative overflow-hidden"
+      >
+        <article
+          class="w-1/3 h-full hidden lg:flex justify-center items-center text-[#046255]"
+        >
+          <a
+            id="tex4"
+            href="https://huntek.vercel.app/signup/applicant"
+            target="_blank"
+            class="flex flex-col w-full h-[350px] justify-between text-white items-center z-10"
+          >
+            <h1 class="text-3xl lg:text-4xl font-semibold">
+              Candidato
+            </h1>
+            <p class="text-base lg:text-xl text-center">
+              Estoy en busca de trabajo
+            </p>
+          </a>
+        </article>
+        <article
+          id="tex5"
+          class="w-full lg:w-1/3 h-1/2 lg:h-full flex flex-col justify-center items-center text-white"
+        >
+          <div
+            id="regcont"
+            class="w-full h-full flex flex-col justify-between items-center z-10"
+          >
+            <h1 class="text-3xl lg:text-4xl font-semibold">
+              Registrate
+            </h1>
+            <p class="text-base lg:text-xl text-center">
+              Selecciona tu tipo de perfil
+            </p>
+          </div>
+        </article>
+        <article
+          class="w-full lg:w-1/3 h-1/3 lg:h-full flex flex-row text-[#046255]"
+        >
+          <div
+            class="w-1/2 h-full flex flex-col justify-start items-center lg:hidden"
+          >
+            <a
+              id="tex4"
+              href="https://huntek.vercel.app/signup/applicant"
+              target="_blank"
+              class="flex flex-col justify-center text-white items-center z-10"
+            >
+              <h1
+                class="text-3xl lg:text-4xl text-start font-semibold"
+              >
+                Candidato
+              </h1>
+              <p class="text-xs lg:text-xl text-start">
+                Estoy en busca de trabajo
+              </p>
+            </a>
+          </div>
+          <div
+            class="w-1/2 lg:w-full h-full flex flex-col justify-end lg:justify-center items-center"
+          >
+            <a
+              id="tex6"
+              href="https://huntek.vercel.app/signup/company"
+              target="_blank"
+              class="flex flex-col justify-center lg:h-[350px] lg:w-full lg:justify-between text-white items-center z-10"
+            >
+              <h1
+                class="text-3xl lg:text-4xl text-start font-semibold"
+              >
+                Empresa
+              </h1>
+              <p class="text-xs lg:text-xl text-start">
+                Estoy en busca de talentos
+              </p>
+            </a>
+          </div>
+        </article>
+        <p class="text-xs text-white absolute bottom-3">
+          Copyright © 2023 - All right reserved by Huntek.
+        </p>
+      </section>
+    </main>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+  </body>
+</html>
